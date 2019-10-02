@@ -29,6 +29,7 @@ TEXT="$TEMP"
 echo $TEXT >> data.csv
 }
 
+IFS=$'\n'
 TEXT="file,extention,creation date,size,length"
 echo $TEXT >> data.csv
 for file in $(ls -R)
