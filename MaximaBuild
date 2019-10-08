@@ -1,0 +1,19 @@
+#!/bin/bash
+#install all dependeces
+git clone https://github.com/andrejv/maxima
+cd maxima
+sudo apt-get update
+sudo apt-get install autotools-dev
+sudo apt-get install automake
+sudo apt-get install texinfo
+#lisp install
+sudo apt-get install common-lisp-controller
+apt-get install npm 
+npm install bootstrap 
+#project build
+sudo ./bootstrap
+sudo ./configure
+sudo make
+sudo make check
+sudo make install
+maxima
