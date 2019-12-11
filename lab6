@@ -1,0 +1,69 @@
+#!/bin/bash
+rosservice call kill turtle1
+
+#2
+rosservice call /spawn 1 7 0 turtle1
+rosservice call turtle1/teleport_relative 1 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 0.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 1.2 0.5
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -3.58]'
+rosservice call turtle1/teleport_relative 1 0
+rosservice call kill turtle1
+
+#4
+rosservice call /spawn 2.5 7 0 turtle1
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 0.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.57]'
+rosservice call turtle1/teleport_relative 0.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.57]'
+rosservice call turtle1/teleport_relative 0.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -3.14]'
+rosservice call turtle1/teleport_relative 1.6 0
+rosservice call kill turtle1
+
+
+#2
+rosservice call /spawn 3.5 7 0 turtle1
+rosservice call turtle1/teleport_relative 1 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 0.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 1.2 0.5
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -3.58]'
+rosservice call turtle1/teleport_relative 1 0
+rosservice call kill turtle1
+
+#1
+rosservice call /spawn 5 7 0 turtle1
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.57]'
+rosservice call turtle1/teleport_relative 1.6 0
+rosservice call kill turtle1
+
+#8
+rosservice call /spawn 5.5 7 0 turtle1
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -1.5707]'
+rosservice call turtle1/teleport_relative 1.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5707]'
+rosservice call turtle1/teleport_relative 0.8 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5707]'
+rosservice call turtle1/teleport_relative 1.6 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5707]'
+rosservice call turtle1/teleport_relative 0.8 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5707]'
+rosservice call turtle1/teleport_relative 0.8 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5707]'
+rosservice call turtle1/teleport_relative 0.8 0
+rosservice call kill turtle1
+
+
+#7
+rosservice call /spawn 6.5 7 0 turtle1
+rosservice call turtle1/teleport_relative 0.8 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, -2.356]'
+rosservice call turtle1/teleport_relative 1.1 0
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.795]'
+rosservice call turtle1/teleport_relative 0.9 0
+rosservice call kill turtle1
